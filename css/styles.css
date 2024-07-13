@@ -32,6 +32,9 @@ margin: 0 auto;
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow:  2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -107,7 +110,7 @@ margin-right: 76px;
 position: relative;
 }
 
-.nav-link.current::before {
+.nav-link.current::after {
     content: '';
 
     position: absolute;
@@ -181,7 +184,9 @@ position: relative;
     border: none;
     margin: 0 auto;
     height: 56px;
-    min-width: 169px
+    min-width: 169px;
+
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-page-button:hover,
@@ -303,6 +308,7 @@ position: relative;
 .team-list-prog {
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 
 .prog-icon {
@@ -323,13 +329,14 @@ position: relative;
     background-color: #4D5AE5;
     border-radius: 50%;
     
+    transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-prog-link:hover
 .team-prog-link:focus {
-    background-color: #404BBF;
+    background-color: #404bbf;
 }
 
 .portfolio {
@@ -384,9 +391,9 @@ position: relative;
 
 .por-list:hover
 .por-list:focus {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-            0 1px 1px 0 rgba(46, 47, 66, 0.16),
-            0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .thumb {
