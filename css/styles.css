@@ -188,10 +188,10 @@ position: relative;
     height: 56px;
     min-width: 169px;
 
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-page-button:hover,
+.main-page-button:hover,    
 .main-page-button:focus {
     background-color: #404BBF
 }
@@ -328,7 +328,7 @@ position: relative;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #404bbf;
+    background-color: #4d5ae5;
     border-radius: 50%;
     
     transition-property: background-color;
@@ -391,12 +391,13 @@ position: relative;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.por-list:hover
+.por-list:hover,
 .por-list:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 
 .thumb {
     position: relative;
