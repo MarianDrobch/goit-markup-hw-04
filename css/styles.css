@@ -336,7 +336,7 @@ position: relative;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-prog-link:hover
+.team-prog-link:hover,
 .team-prog-link:focus {
     background-color: #404bbf;
 }
